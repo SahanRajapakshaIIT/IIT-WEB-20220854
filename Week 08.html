@@ -66,13 +66,46 @@
         </p>
         
         <script>
-            var answer = prompt("Enter your answer")
-            if(answer==2) {
-                document.getElementById("answer1").innerHTML="Answer 1 + 1 : "+answer;
-                document.getElementById("answer1").classList.add("correct");
-            }else{
-                document.getElementById("feedback1").classList.add("incorrect");
-            }
+    var answer1 = prompt("What is 1 + 1?");
+    if(answer1 == 2) {
+        document.getElementById("answer1").innerHTML = "Answer: " + answer1;
+        document.getElementById("feedback1").innerHTML = "<span class='correct'>Correct</span>";
+    } else {
+        document.getElementById("feedback1").innerHTML = "<span class='incorrect'>Incorrect</span>";
+    }
+    
+    var answer2 = prompt("What is 2 + 2?");
+    if(answer2 == 4) {
+        document.getElementById("answer2").innerHTML = "Answer: " + answer2;
+        document.getElementById("feedback2").innerHTML = "<span class='correct'>Correct</span>";
+    } else {
+        document.getElementById("feedback2").innerHTML = "<span class='incorrect'>Incorrect</span>";
+    }
+    
+    var answer3 = prompt("What is 3 + 3?");
+    if(answer3 == 6) {
+        document.getElementById("answer3").innerHTML = "Answer: " + answer3;
+        document.getElementById("feedback3").innerHTML = "<span class='correct'>Correct</span>";
+    } else {
+        document.getElementById("feedback3").innerHTML = "<span class='incorrect'>Incorrect</span>";
+    }
+    
+    var answer4 = prompt("What is 4 + 4?");
+    if(answer4 == 8) {
+        document.getElementById("answer4").innerHTML = "Answer: " + answer4;
+        document.getElementById("feedback4").innerHTML = "<span class='correct'>Correct</span>";
+    } else {
+        document.getElementById("feedback4").innerHTML = "<span class='incorrect'>Incorrect</span>";
+    }
+    
+    var answer5 = prompt("What is 5 + 5?");
+    if(answer5 == 10) {
+        document.getElementById("answer5").innerHTML = "Answer: " + answer5;
+        document.getElementById("feedback5").innerHTML = "<span class='correct'>Correct</span>";
+    } else {
+        document.getElementById("feedback5").innerHTML = "<span class='incorrect'>Incorrect</span>";
+    }
+    
         </script>
     </body>
 </html>
